@@ -38,6 +38,14 @@ The extension does not bypass Blind Valet permissions. It only exports data visi
 5. Click `Load unpacked`.
 6. Select the extension folder.
 
+If this folder is still inside a larger project, select:
+
+```text
+browser-extensions/blind-valet-csv-exporter
+```
+
+If this project has been moved to its own repository, select the repository root.
+
 ## How to Use
 
 1. Log in to Blind Valet.
@@ -46,10 +54,11 @@ The extension does not bypass Blind Valet permissions. It only exports data visi
 4. Look for the exporter banner injected near the top of the page.
 5. Click `IMPORT`.
 6. Leave `Export only finished tournaments` enabled if you only want completed tournament results.
-7. Click `Start export`.
-8. Wait for the exporter to crawl the visible tournament pages.
-9. Click `Download CSV`.
-10. Review the CSV before importing it anywhere else.
+7. Set the tournament date range. `From` defaults to `2020-01-01` and is required. `To` defaults to today; leave it empty to export through today.
+8. Click `Start export`.
+9. Wait for the exporter to crawl the visible tournament pages in the selected range.
+10. Click `Download CSV`.
+11. Review the CSV before importing it anywhere else.
 
 ## CSV Output
 

@@ -63,13 +63,6 @@
   min-width: 0;
 }
 
-.tc-bv-import-banner__logo {
-  flex: 0 0 auto;
-  width: 44px;
-  height: 44px;
-  object-fit: contain;
-}
-
 .tc-bv-import-banner__text strong {
   font-weight: 800;
   font-size: 15px;
@@ -181,21 +174,6 @@
   border-bottom: 1px solid #262626;
 }
 
-.tc-bv-header-brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  min-width: 0;
-}
-
-.tc-bv-header-logo {
-  flex: 0 0 auto;
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-}
-
 .tc-bv-icon-button {
   position: absolute;
   top: 12px;
@@ -253,6 +231,40 @@
 
 .tc-bv-checkbox input {
   margin-top: 2px;
+}
+
+.tc-bv-date-range {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.tc-bv-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #d8deea;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.tc-bv-field span {
+  font-size: 12px;
+}
+
+.tc-bv-field input {
+  width: 100%;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  background: #0d0d0d;
+  color: #f8fafc;
+  font: inherit;
+  padding: 8px 10px;
+}
+
+.tc-bv-field input:focus {
+  border-color: #818CF8;
+  outline: none;
 }
 
 .tc-bv-actions {
